@@ -1,0 +1,42 @@
+#include "phase_support.h"
+#include "my_math.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <float.h>
+
+// Return a float array with Nx periods, starting at 24 h, and increasing by 0.1 h
+float* generateGradedPeriods( int Nx ) {
+  float* periods = (float *)malloc( Nx* sizeof(float) );
+  int i;
+  for (i=0; i < Nx; i++) {
+    periods[i] = 24 + 0.1*i;
+  }
+  return periods;
+}
+
+// Return an array of Nx zeros.
+float *createInitialPhasesZeros( int Nx ) {
+  float *x0 = (float *)malloc( sizeof(float*) * Nx );
+  int i;
+  for (i=0; i < Nx; i++) {
+    x0[i] = 0.0;
+  }
+  return x0;
+}
+
+// Write this!
+float *runPhaseSimulation( float t0, float dt, int Nt, float *x0, int Nx, Params *paramStruct )  {
+    return NULL;
+}
+
+// Write this!
+int *runPhaseSimulationAndDetectEvents( float t0, float dt, int Nt, float *x0, int Nx, Params *paramStruct, int NmaxEvent ) {
+    return NULL;
+}
+
+// Write this!
+float *runPhaseSimulationFindEventStats( float t0, float dt, int Nt, float *x0, int Nx, Params *paramStruct, int NmaxEvent ) {
+    return NULL;
+}

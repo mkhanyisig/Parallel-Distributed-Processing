@@ -1,0 +1,3 @@
+==38986== NVPROF is profiling process 38986, command: /mnt/export/home/mggamedz/proj07/vector_add
+==38986== Warning: Unified Memory Profiling is not supported on devices of compute capability less than 3.0
+==38986== Generated result file: /mnt/export/home/mggamedz/nvvp_workspace/.metadata/.plugins/com.nvidia.viper/launch/1/api_38986.log

@@ -1,0 +1,142 @@
+#+1522679389
+env
+#+1522679767
+ls -a
+#+1522679818
+echo $LD_LIBRARY_PATH
+#+1522679825
+echo $PATH
+#+1522679831
+vi .cshrc
+#+1525914432
+cd exit
+#+1525914493
+ssh -X n1
+#+1525915573
+cd /Volumes/Personal-2/mggamedz/CS336/Parallel/project\ 7
+#+1525915585
+echo $SHELL
+#+1525915678
+lso
+#+1525915688
+ls -al
+#+1525915744
+mkdir proj07
+#+1525916040
+../hello
+#+1525916045
+./hello
+#+1526009939
+cd
+#+1526048610
+ls -l
+#+1526048749
+& xemacs
+#+1526048778
+emacs -nw
+#+1526049169
+xemacs &
+#+1526050690
+vi Makefile
+#+1526050699
+rm vector_add
+#+1526050703
+rm vector_add.o
+#+1526050708
+make vector_ad
+#+1526057190
+make computeprof
+#+1526058448
+cd proj07/
+#+1526058696
+ls -ltr
+#+1526058715
+fg
+#+1527924621
+./vector_dot
+#+1527928109
+make vector_dot
+#+1527928938
+make vector_add_a
+#+1528008266
+make vector_dot_b
+#+1528008268
+./vector_dot_b
+#+1528008299
+make vector_dot_a
+#+1528008304
+./vector_dot_a
+#+1528011580
+cd nvvp_workspace/
+#+1528011591
+cd RemoteSystemsTempFiles/
+#+1528011611
+..
+#+1528011617
+../
+#+1528011708
+pws
+#+1528011723
+ssh -X bombur.cs.colby.edu
+#+1528011889
+ssh n1
+#+1528013014
+cluster_locksmith
+#+1528013024
+gcc -o xdisp -I../include -I/usr/X11/include xdisp.c -L../lib -L/usr/X11/lib -limageIO -lX11 -lm
+#+1528013042
+echo $PWD'>'
+#+1528013089
+computeprof
+#+1528013122
+echo "<<<<< NSIGHT" ; bash -i which nvcc ; echo ">>>>> NSIGHT"
+#+1528013124
+echo "<<<<< NSIGHT" ; ( test -x "bash: /usr/bin/nvcc" -a '!' -h "bash: /usr" && ( "bash: /usr/bin/nvcc" --version ; echo "----------- Library dirs below ------------" ; ls -df1 "bash: /usr/lib64" "bash: /usr/lib" 2 > /dev/null ) ) ; echo ">>>>> NSIGHT"
+#+1528013126
+echo "<<<<< NSIGHT" ; ( test -x "/usr/local/cuda-8.0/bin/nvcc" -a '!' -h "/usr/local/cuda-8.0" && ( "/usr/local/cuda-8.0/bin/nvcc" --version ; echo "----------- Library dirs below ------------" ; ls -df1 "/usr/local/cuda-8.0/lib64" "/usr/local/cuda-8.0/lib" 2 > /dev/null ) ) ; echo ">>>>> NSIGHT"
+#+1528013128
+echo "<<<<< NSIGHT" ; ( test -x "/usr/local/cuda/bin/nvcc" -a '!' -h "/usr/local/cuda" && ( "/usr/local/cuda/bin/nvcc" --version ; echo "----------- Library dirs below ------------" ; ls -df1 "/usr/local/cuda/lib64" "/usr/local/cuda/lib" 2 > /dev/null ) ) ; echo ">>>>> NSIGHT"
+#+1528013183
+cd proj07
+#+1528017604
+s
+#+1528019256
+make vector_add
+#+1528019258
+./vector_add
+#+1528020079
+scp -r mggamedz@bombur.cs.colby.edu:/mnt/export/home/mggamedz /Volumes/Personal/mggamedz/CS336/Parallel/project\ 7\ b
+#+1528020110
+scp -r mggamedz@bombur.cs.colby.edu:/mnt/export/home/mggamedz /Volumes/Personal/mggamedz/CS336/Parallel/project7b
+#+1528020198
+scp -r mggamedz@bombur.cs.colby.edu:/mnt/export/home/mggamedz /Users/mggamedz/Documents
+#+1528084826
+ssh n2
+#+1528084872
+mkdir -p /mnt/export/home/mggamedz/proj08
+#+1528088000
+Makefile
+#+1528088153
+make clean
+#+1528101952
+make clear
+#+1528102833
+make
+#+1528127065
+cd proj08
+#+1528132680
+scp mggamedz@bombur.cs.colby.edu:/mnt/export/home/mggamedz/proj08 /Users/mggamedz/Documents
+#+1528132710
+scp mggamedz@bombur.cs.colby.edu:/mnt/export/home/mggamedz/proj08 /Users/mggamedz/Documents/
+#+1528132720
+scp mggamedz@bombur.cs.colby.edu:/mnt/export/home/mggamedz/proj08/ /Users/mggamedz/Documents/
+#+1528132729
+scp mggamedz@bombur.cs.colby.edu:/mnt/export/home/mggamedz/ /Users/mggamedz/Documents/
+#+1528133430
+ls
+#+1528133445
+clear
+#+1528133504
+pwd
+#+1528133509
+exit
